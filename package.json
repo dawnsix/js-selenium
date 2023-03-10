@@ -1,0 +1,24 @@
+{
+  "name": "js-selenium",
+  "version": "1.0.0",
+  "description": "selenium + js template",
+  "type": "module",
+  "scripts": {
+    "test": "mocha --recursive --timeout 10000 tests/*",
+    "test-bs": "browserstack-node-sdk mocha --recursive --timeout 10000 tests/*"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "chai": "^4.3.7",
+    "chromedriver": "^110.0.0",
+    "selenium-webdriver": "^4.8.1"
+  },
+  "devDependencies": {
+    "browserstack-node-sdk": "^1.6.2",
+    "mocha": "^10.2.0"
+  },
+  "engines": {
+    "node": ">=8.0.0",
+    "yarn": ">=1.0.0"
+  }
+}
