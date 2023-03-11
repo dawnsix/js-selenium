@@ -13,7 +13,6 @@ platforms:
     browserVersion: 14.1
 parallelsPerPlatform: 1
 browserstackLocal: true
-buildName: sherpa-ci-action
 projectName: sherpa-ci
 testObservability: true
 networkLogs: true
