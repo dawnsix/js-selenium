@@ -1,5 +1,5 @@
 import 'chromedriver';
-import { Builder, By } from 'selenium-webdriver';
+import { Builder, By, Capabilities } from 'selenium-webdriver';
 import { assert } from 'chai';
 
 import LandingPage from '../pages/landingPage.js';
@@ -12,9 +12,16 @@ let loginPage;
 
 beforeEach(async function() {
     console.log(data.target)
+    /*
     driver = await new Builder()
         .forBrowser('chrome')
         .build();
+    */
+
+    driver = await new Builder().
+        usingServer('http://localhost:4444/wd/hub').
+        withCapabilities(Capabilities.chrome()).
+        build();
 
     landingPage = new LandingPage(driver);
     loginPage = new LoginPage(driver);
