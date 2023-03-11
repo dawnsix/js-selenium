@@ -41,4 +41,4 @@ describe('user management flows', function() {
     });
 });
 
-//afterEach(() => driver && driver.quit());
+afterEach(() => driver && driver.quit());
