@@ -12,15 +12,10 @@ let loginPage;
 
 beforeEach(async function() {
     console.log(data.target)
-    /*
+    
     driver = await new Builder()
         .forBrowser('chrome')
         .build();
-    */
-
-    driver = await new Builder().
-        usingServer('http://localhost:4444/wd/hub').
-        build();
 
     landingPage = new LandingPage(driver);
     loginPage = new LoginPage(driver);
