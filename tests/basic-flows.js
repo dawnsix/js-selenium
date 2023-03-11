@@ -20,7 +20,6 @@ beforeEach(async function() {
 
     driver = await new Builder().
         usingServer('http://localhost:4444/wd/hub').
-        withCapabilities(Capabilities.chrome()).
         build();
 
     landingPage = new LandingPage(driver);
