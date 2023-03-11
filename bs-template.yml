@@ -9,11 +9,18 @@ platforms:
     browserVersion: 103.0
   - os: OS X
     osVersion: Big Sur
-    browserName: Safari
-    browserVersion: 14.1
+    browserName: Chrome
+    browserVersion: latest
+  - os: Windows
+    osVersion: 10
+    browserName: Edge
+    browserVersion: latest
+  - deviceName: Samsung Galaxy S22 Ultra
+    browserName: chrome
+    osVersion: 12.0
 parallelsPerPlatform: 1
 browserstackLocal: true
-projectName: sherpa-ci
 testObservability: true
 networkLogs: true
 consoleLogs: info
+projectName: sherpa-ci
