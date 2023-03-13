@@ -4,8 +4,8 @@
   "description": "selenium + js template",
   "type": "module",
   "scripts": {
-    "test": "mocha --recursive --timeout 10000 tests/*",
-    "test-bs": "browserstack-node-sdk mocha --recursive --timeout 10000 tests/*"
+    "test": "mocha --recursive --timeout 10000 --parallel tests/*",
+    "test-bs": "browserstack-node-sdk mocha --recursive --parallel --timeout 10000 tests/*"
   },
   "license": "MIT",
   "dependencies": {
