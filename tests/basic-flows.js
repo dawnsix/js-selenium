@@ -15,6 +15,7 @@ beforeEach(async function() {
     
     driver = await new Builder()
         .forBrowser('firefox')
+        .withCapabilities({"browserstack.debug" : "true"})
         .build();
 
     landingPage = new LandingPage(driver);
