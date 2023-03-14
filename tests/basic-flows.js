@@ -14,7 +14,7 @@ beforeEach(async function() {
     console.log(data.target)
     
     driver = await new Builder()
-        .forBrowser('chrome')
+        .forBrowser('firefox')
         .build();
 
     landingPage = new LandingPage(driver);
